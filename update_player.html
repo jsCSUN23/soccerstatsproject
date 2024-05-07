@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Player</title>
+    <link rel="stylesheet" href="add_player.css">
+</head>
+<body>
+<div class="container">
+    <h1>Update Player</h1>
+    <button class="back-button" onclick="location.href='landing_page.html'">Back</button>
+    <form id="removePlayerForm">
+        <div class="form-group">
+            <label for="playerName">Player Name:</label>
+            <input type="text" id="playerName" name="playerName" required>
+        </div>
+        <div class="form-group">
+            <label for="team">Team:</label>
+            <input type="text" id="team" name="team" required>
+        </div>
+        <div class="form-group">
+            <label for="position">Position:</label>
+            <select type ="dropdown" id="position" name="position" required>
+                <option value="">Select Position</option>
+                <option value="Forward">Forward</option>
+                <option value="Midfield">Midfield</option>
+                <option value="Defender">Defender</option>
+                <option value="Keeper">Keeper</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="goals">Goals:</label>
+            <input type="number" id="goals" name="goals" required>
+        </div>
+        <div class="form-group">
+            <label for="assists">Assists:</label>
+            <input type="number" id="assists" name="assists" required>
+        </div>
+        <button type="button" onclick="submitUpdateForm()">Update Player</button>
+    </form>
+</div>
+<script src="src/script.js"></script>
+</body>
+</html>

@@ -1,6 +1,86 @@
 body, html {
     height: 100%;
     margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light background for better readability */
+}
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px; /* Larger text for heading */
+}
+
+.back-button {
+    display: block; /* Ensure it is a block-level element if not already */
+    width: 100%; /* Full width for alignment with the form */
+    margin-top: 10px; /* Space from the Search button */
+    padding: 10px;
+    background-color: #007bff; /* Consistent styling with other buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Align form elements centrally */
+    padding: 20px;
+    margin-top: 50px; /* Space from top */
+    width: 80%;
+    max-width: 500px; /* Max width of form */
+    background-color: #fff; /* White background for form */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+select, button {
+    width: 100%; /* Full width for all form elements */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between form elements */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745; /* Green background for the button */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+#results {
+    margin-top: 50px;
+    margin-left: 20px; /* Adds space to the left, pushing the container to the right */
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+
+/* body, html {
+    height: 100%;
+    margin: 0;
 }
 .container {
     height: 100%;
@@ -23,5 +103,5 @@ button {
 }
 button + button {
     margin-top: 20px;
-}
+} */
 

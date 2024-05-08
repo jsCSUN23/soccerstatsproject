@@ -4,6 +4,86 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4; /* Light grey background for a softer look */
+}
+
+.container {
+    width: 90%;
+    max-width: 500px; /* Maximum width for the form */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    border-radius: 10px;
+    text-align: center; /* Center align the content */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px; /* Larger font size for labels */
+    color: #333; /* Dark grey for better readability */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border: 2px solid #ccc; /* Slight border for definition */
+    border-radius: 5px; /* Rounded corners for inputs */
+    box-sizing: border-box;
+}
+
+button[type="button"], .back-button {
+    width: 100%; /* Make the button full width */
+    padding: 12px;
+    margin-top: 10px; /* Space between the form button and back button */
+    font-size: 16px;
+    background-color: #28a745; /* Green color for actions */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="button"]:hover, .back-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+button[type="button"]:active, .back-button:active {
+    background-color: #1e7e34; /* Even darker green when clicked */
+}
+
+.back-button {
+    background-color: #007bff; /* Blue for the back button */
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.back-button:active {
+    background-color: #004085; /* Even darker on click */
+}
+
+
+
+
+
+
+/* body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
@@ -34,4 +114,4 @@ input[type="number"] {
 button {
     padding: 10px 20px;
     font-size: 16px;
-}
+} */

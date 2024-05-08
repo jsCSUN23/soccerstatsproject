@@ -1,6 +1,67 @@
 body, html {
     height: 100%;
     margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffffff, #e3e4e5);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    font-weight: 300;
+    color: #5a5a5a;
+    margin-bottom: 20px; /* Ensure spacing between title and buttons */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Prevents wrapping of buttons */
+    gap: 10px; /* Adjust gap for better spacing */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #004085;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+}
+
+/* body, html {
+    height: 100%;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,4 +83,4 @@ button {
 
 button + button {
     margin-top: 20px;
-}
+} */
